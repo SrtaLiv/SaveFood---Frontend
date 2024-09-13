@@ -1,10 +1,7 @@
-<h1>Busca tu comida</h1>
-<div class="card flex justify-content-center">
-    <form [formGroup]="formGroup">
-        <p-autoComplete 
-            formControlName="selectedFood"
-            [suggestions]="filteredFoods || []" 
-            (completeMethod)="filterFood($event)" 
-            field="name" />
+<div class="card flex flex-column gap-2 p-4 justify-content-start">
+    <h1>Busca tu comida</h1>
+    <form [formGroup]="formGroup" class="form-container ml-10">
+        <p-autoComplete class="auto-complete-input" formControlName="selectedFood" [suggestions]="filteredFoods || []"
+            (completeMethod)="filterFood($event)" field="name" />
     </form>
 </div>

@@ -1,0 +1,16 @@
+/* Asegúrate de que el contenedor .card tenga el 100% del ancho disponible */
+.card {
+    width: 100%;
+}
+
+/* Establece el formulario para que ocupe el ancho completo de su contenedor */
+.form-container {
+    width: 100%; /* El formulario ocupará el ancho completo del contenedor .card */
+    box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del ancho */
+}
+
+/* Asegúrate de que el auto-complete ocupe el ancho completo del formulario */
+.auto-complete-input {
+    width: 100%; /* El componente p-autoComplete ocupará el ancho completo del formulario */
+    box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del ancho */
+}
