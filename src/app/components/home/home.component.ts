@@ -1,4 +1,4 @@
-import { Component, Input, input } from '@angular/core';
+import { Component} from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { Food } from '../../models/food';
@@ -7,12 +7,11 @@ import { RouterModule } from '@angular/router';
 import { MessageService } from 'primeng/api';
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { TableModule } from 'primeng/table';
-import { SearchComponent } from "../search/search.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ButtonModule, CardModule, RouterModule, AutoCompleteModule, TableModule, SearchComponent],
+  imports: [ButtonModule, CardModule, RouterModule, AutoCompleteModule, TableModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -37,7 +36,6 @@ export class HomeComponent {
       this.foods = data;
     });
   }
-
 
   deleteFood(id: number) {
     this.isDeleteInProgress = true;

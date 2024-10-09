@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { FoodFormComponent } from './components/food-form/food-form.component';
 import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
+import { LoginComponent } from './components/login/login.component';
 
 //Rutas
 export const routes: Routes = [
@@ -17,9 +18,9 @@ export const routes: Routes = [
         title: 'Formulario de Comidas'
     },
     {
-        path: 'search',
-        component: SearchComponent,
-        title: 'Search'
+        path: 'login',
+        component: LoginComponent,
+        title: 'Login'
     },
     {
         path: '*',

@@ -26,7 +26,6 @@ export enum Meal {
   Snack = 'Snack',
 }
 
-
 @Component({
   selector: 'app-food-form',
   standalone: true,

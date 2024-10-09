@@ -19,9 +19,7 @@ interface AutoCompleteCompleteEvent {
 })
 export class SearchComponent implements OnInit {
   foods: any[] | undefined;
-
   formGroup!: FormGroup;
-
   filteredFoods: any[] | undefined;
 
   constructor(private foodService: FoodService) {}

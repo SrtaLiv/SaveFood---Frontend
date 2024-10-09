@@ -1,0 +1,11 @@
+<p-menubar class="flex gap-2 p-4">
+    <nav class="flex">
+        <img src="/assets/defecto.png" alt="">
+        <app-search/>
+        <ul class="flex flex-row">
+        @for (item of items; track $index) {
+            <li>{{item.label}}</li>
+        }
+        </ul>
+    </nav>
+</p-menubar>
